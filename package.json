@@ -1,0 +1,29 @@
+{
+  "name": "agentvault",
+  "version": "0.1.0",
+  "description": "On-chain AI Agent Registry for Solana",
+  "main": "app/dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node app/dist/index.js",
+    "dev": "ts-node app/src/index.ts",
+    "test": "anchor test"
+  },
+  "keywords": ["solana", "ai", "agents", "registry", "reputation"],
+  "author": "Junior Claw",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
